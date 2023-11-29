@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
-        android:padding="12dp">
+        android:padding="16dp">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
@@ -59,7 +59,7 @@
             android:layout_marginTop="16dp"
             android:padding="12dp"
             android:background="@drawable/rounded_search_bar"
-            android:id="@+id/searchEditText"
+            android:id="@+id/et_search_box"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
@@ -71,5 +71,30 @@
             app:layout_constraintTop_toBottomOf="@id/tv_name"
             app:layout_constraintStart_toStartOf="parent"/>
 
+        <include layout="@layout/big_card"
+            android:id="@+id/big_card" />
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/big_card"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELECT YOUR GOAL" />
+            
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_goal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
