@@ -3,4 +3,19 @@
     <string name="goodMorning">Hello, Good Morning</string>
     <string name="search">Search...</string>
     <string name="big_card_header">FIT YOUNG WOMAN DOING \n BATTLE STRETCH TRAINING</string>
+    <string name="goal_list">goal_list</string>
+    <string name="goal_header">SELECT YOUR GOAL</string>
+    <string name="category">CATEGORY</string>
+    <string name="category_name">Your Text</string>
+
+    <string-array name="data_goal">
+        <item>Loose Weight</item>
+        <item>Gain Weitght</item>
+        <item>Body Building</item>
+        <item>Healthy</item>
+    </string-array>
+
+    <string-array name="data_category_img">
+        <item></item>
+    </string-array>
 </resources>
